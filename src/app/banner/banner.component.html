@@ -1,0 +1,51 @@
+<div class="input-group md-form form-sm form-2 pl-0 searchbar">
+        <input class="form-control my-0 py-1 amber-border" [(ngModel)]="searchtext" type="text" placeholder="Search" aria-label="Search">
+        <div class="input-group-append">
+          <span class="input-group-text amber lighten-3" id="basic-text1"><i class="fa fa-search"></i></span>
+        </div>
+</div>
+
+
+
+<div class="container posters">
+    <div class="row">
+        <div *ngFor="let MyData of datas.results  | mysearch:searchtext" class="col-md-4">
+           <div class="panel panel-default pt-5 pb-5">
+               <div class="panel-heading">
+                <span class="title">{{MyData.title}}</span>
+                <hr>
+                </div>
+                <img class="card-img pb-5"
+                    src="https://image.tmdb.org/t/p/w200/{{MyData.poster_path}}" alt="Card image cap">
+            
+            <div class="text-center">
+                <button type="button" class="btn btn-primary" data-toggle="modal">Details
+                </button>
+            </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- <div class="modal" id="myModal" tabindex="-1" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button class="close" data-dismiss="modal">&times;</button>
+                </div>
+    
+                <div class="modal-body">
+                    <div class="card">
+
+                        <div *ngFor="let MyData of datas.results" >
+                            {{MyData.Overview}} <br>{{MyData.release_date}}
+                        </div>
+    
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> -->

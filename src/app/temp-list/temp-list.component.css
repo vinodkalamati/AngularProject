@@ -1,0 +1,41 @@
+.imgg{
+	width: 300px;
+	height: 400px;
+}
+
+.top-buffer { 
+	margin-top:20px; 
+  }
+
+.events-text
+{
+	background:rgba(0,0,0,0.8);
+	color:white;
+	padding: 50px;
+	margin:14px 15px; 
+
+}
+
+#footer-main{
+	background: #222;
+	color: white;
+	font-size: 14px;
+	padding-top: 40px;
+	width: 100%;
+}
+#logo{
+	text-shadow: 3px 1px 1px red;
+	font-family:  Trajan;
+	font-size: 30px;
+}
+#main{
+	height: auto;
+	width: 100%;
+}
+#loading{
+	font-size: 6px; 
+}
+#socialmedia{
+	color: white;
+	font-size: 14px;
+}
