@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import {DatasourceService} from '../datasource.service'
-import {FormControl} from '@angular/forms';
 @Component({
   selector: 'app-banner',
   templateUrl: './banner.component.html',
@@ -17,5 +16,6 @@ export class BannerComponent implements OnInit {
         });
         
   }
+
 
 }

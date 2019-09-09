@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {provideRoutes,ROUTER_CONFIGURATION} from '@angular/router';
+
 
 @Component({
   selector: 'app-moviedetail',

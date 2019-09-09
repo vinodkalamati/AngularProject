@@ -11,6 +11,7 @@ import { BannerComponent } from './banner/banner.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { MoviedetailComponent } from './moviedetail/moviedetail.component';
 import { MysearchPipe } from './mysearch.pipe';
+import { DatasourceService } from './datasource.service';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,7 @@ import { MysearchPipe } from './mysearch.pipe';
     HttpClientModule,
     FormsModule
   ],
-  providers: [],
+  providers: [DatasourceService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

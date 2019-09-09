@@ -14,7 +14,7 @@ export class MysearchPipe implements PipeTransform {
       args=args;
     }
     return value.filter(MyData=>{
-      return MyData.title.includes(args)==true
+      return MyData.title.includes(args)==true;
     })
   }
 
